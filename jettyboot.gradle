@@ -1,0 +1,20 @@
+/**
+ *
+ */
+
+apply plugin: 'war'
+apply plugin: 'org.avaje.boot'
+
+boot {
+	mainClass = 'org.avaje.jettyrunner.RunWar'
+}
+
+dependencies {
+	compile 'org.avaje.jetty:avaje-jetty-runner:2.3.1'
+	compile 'javax.servlet:javax.servlet-api:3.1.0'
+}
+
+war {
+	baseName = 'app'
+	version = ''
+}
